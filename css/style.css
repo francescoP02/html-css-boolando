@@ -10,24 +10,34 @@
 .container {
     width: 80%;
     max-width: 1200px;
-    border: 1px solid red;
-    margin-left: 15%;
+    /* border: 1px solid red; */
+    margin: 3em auto;
 }
 
 .riga {
     width: 100%;
+    margin-bottom: 2em;
+}
+
+.product {
+    /* border: 2px solid blue; */
+    display: inline-block;
+    width: calc((100%/3) - 4px);
+    position: relative;
+    vertical-align: top;
+}
+
+.product:hover {
+    cursor: pointer;
+}
+
+.top-part:hover .heart {
+    color: #ff0000;
 }
 
 /* PRODOTTI */
 
 /* TOP PART */
-
-.product {
-    border: 2px solid blue;
-    display: inline-block;
-    width: calc((100%/3) - 3px);
-    position: relative;
-}
 
 .product img {
     width: 100%;
@@ -58,8 +68,8 @@
     top: 10px;
     right: 0;
     background-color: #ffffff;
-    width: 1em;
-    padding: .2em;
+    width: 2em;
+    padding: .5em;
 }
 
 .top-part .sostenibilità {
@@ -71,10 +81,6 @@
 }
 
 /* BOTTOM PART */
-
-.bottom-part span :nth-child(1), :nth-child(2){
-    display: block;
-}
 
 .sales {
     color: #ff0000;
